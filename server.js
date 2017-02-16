@@ -14,7 +14,7 @@ var express     = require('express'),
 var db = require('./config/db');
 
 //set port
-var port = porcess.env.PORT :: 3000;
+var port = process.env.PORT || 3000;
 
 // connect to mongoDB 
 // mongoose.connect(db.url);
