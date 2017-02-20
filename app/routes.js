@@ -12,15 +12,15 @@ var Photo = require('./models/photo');
     // authentication routes
 
     // sample api route 
-    app.get('/photos', function(req, res) {
-      Photo.find(function(err, photos) {
+        // app.get('/photos', function(req, res) {
+        //   Photo.find(function(err, photos) {
 
-        if (err)
-          res.send(err);
-        res.json(photos);
+        //     if (err)
+        //       res.send(err);
+        //     res.json(photos);
 
-      });
-    });
+        //   });
+        // });
 
     // CREATE ROUTE
 
@@ -30,9 +30,13 @@ var Photo = require('./models/photo');
     // route to handle angular requests
 
     app.get('*', function(req, res) {
-      res.sendfile('./public/views/index.html'); // load public/index.html file
+      res.sendfile('./public/index.html'); // load public/index.html file
     });
 
+
+    // app.get('*', function(req, res) {
+    //   res.sendfile('./public/views/index.html'); // load public/index.html file
+    // });
 
 
 

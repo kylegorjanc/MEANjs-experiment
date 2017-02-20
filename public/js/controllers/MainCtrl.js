@@ -1,5 +1,5 @@
 // public/js/controllers/MainCtrl.js
 
-angular.module('MainCtrl', []).controller('MainController', function($scope) {
-  $scope.tagline = 'Make it beautiful, baby.';
-});
+// angular.module('MainCtrl', []).controller('MainController', function($scope) {
+//   $scope.tagline = 'Make it beautiful, baby.';
+// });

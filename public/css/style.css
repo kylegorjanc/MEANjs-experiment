@@ -1,0 +1,64 @@
+
+/* ********** LISTS ********** */ 
+ul.inline {
+  list-style: bullet;
+  padding: 0;
+}
+
+ul.inline > li {
+  display: inline;
+  white-space: nowrap;
+}
+
+ul.inline-bullet li:after {
+  content: " \2022"; 
+}
+
+ul.inline-bullet li.nobullet:after { 
+  content: none; 
+}
+
+ul.clean {
+  list-style-type: none;
+  padding: 0;
+  text-indent:-10px;
+  margin-left:10px
+}
+
+/* ********** END LISTS ********** */ 
+
+/* ********** RESUME ********** */ 
+.job {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.job-title {
+  font-size: 1.4em;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+}
+
+.job-notes {
+  font-style: italic;
+}
+
+.job-link {
+
+}
+
+.job-desc {
+
+}
+
+.job-date {
+  float:right;
+}
+
+.job-submenu {
+  list-style-type: disc;
+  padding-left: 40px;
+}
+
+/* ********** END RESUME ********** */ 
