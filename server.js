@@ -15,7 +15,7 @@ var express     = require('express'),
 var db = require('./config/db');
 
 //set port
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 3000;
 
 // connect to mongoDB 
 mongoose.connect('mongodb://localhost/dev-des-proj');
