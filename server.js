@@ -5,6 +5,7 @@
 var express     = require('express'),
     app         = express(),
     bodyParser  = require('body-parser'),
+    mongoose    = require('mongoose'),
     methodOverride = require('method-override');
 
 // configuration =========================
@@ -17,7 +18,7 @@ var db = require('./config/db');
 var port = process.env.PORT || 3000;
 
 // connect to mongoDB 
-// mongoose.connect(db.url);
+mongoose.connect('mongodb://localhost/dev-des-proj');
 
 // get all data of the body (POST) params
 // parse application/json

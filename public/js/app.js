@@ -12,17 +12,17 @@ kyleApp.config(function($routeProvider, $locationProvider) {
 
   .when('/photos', {
     templateUrl : 'views/photos.html',
-    controller : 'mainController'
+    controller : 'photosController'
   })
 
   .when('/projects', {
     templateUrl : 'views/projects.html',
-    controller : 'mainController'
+    controller : 'projectsController'
   })
 
   .when('/resume', {
     templateUrl : 'views/resume.html',
-    controller : 'mainController'
+    controller : 'resumeController'
   });
 });
 
@@ -30,16 +30,19 @@ kyleApp.config(function($routeProvider, $locationProvider) {
 // ======== CONTROLLERS
 
 kyleApp.controller('mainController', function($scope) {
-  $scope.message = 'check me out!';
+  $scope.message = 'Well hi there.';
 });
 
-kyleApp.controller('photoController', function($scope) {
-  $scope.message = 'check me out!';
+kyleApp.controller('photosController', function($scope) {
+  $scope.message = 'My cool pictures go here';
 });
 
 kyleApp.controller('projectsController', function($scope) {
-    $scope.message = 'Look! I am projects page.';
+    $scope.message = 'The Projects will go here';
 });
 
+kyleApp.controller('resumeController', function($scope) {
+    $scope.title = 'Resume';
+});
 
 
